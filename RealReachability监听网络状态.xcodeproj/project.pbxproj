@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9368B571D614F7C00D90E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B561D614F7C00D90E83 /* main.m */; };
+		F9368B601D614F7C00D90E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9368B5E1D614F7C00D90E83 /* Main.storyboard */; };
+		F9368B621D614F7C00D90E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9368B611D614F7C00D90E83 /* Assets.xcassets */; };
+		F9368B651D614F7C00D90E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9368B631D614F7C00D90E83 /* LaunchScreen.storyboard */; };
+		F9368B751D614FC600D90E83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B6F1D614FC600D90E83 /* ViewController.m */; };
+		F9368B761D614FC600D90E83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B731D614FC600D90E83 /* AppDelegate.m */; };
+		F9368B951D61502800D90E83 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B7A1D61502800D90E83 /* LocalConnection.m */; };
+		F9368B961D61502800D90E83 /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B7E1D61502800D90E83 /* FSMEngine.m */; };
+		F9368B971D61502800D90E83 /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B801D61502800D90E83 /* FSMStateUtil.m */; };
+		F9368B981D61502800D90E83 /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B821D61502800D90E83 /* ReachState.m */; };
+		F9368B991D61502800D90E83 /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B841D61502800D90E83 /* ReachStateLoading.m */; };
+		F9368B9A1D61502800D90E83 /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B861D61502800D90E83 /* ReachStateUnloaded.m */; };
+		F9368B9B1D61502800D90E83 /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B881D61502800D90E83 /* ReachStateUnReachable.m */; };
+		F9368B9C1D61502800D90E83 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B8A1D61502800D90E83 /* ReachStateWIFI.m */; };
+		F9368B9D1D61502800D90E83 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B8C1D61502800D90E83 /* ReachStateWWAN.m */; };
+		F9368B9E1D61502800D90E83 /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B8F1D61502800D90E83 /* PingFoundation.m */; };
+		F9368B9F1D61502800D90E83 /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B911D61502800D90E83 /* PingHelper.m */; };
+		F9368BA01D61502800D90E83 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F9368B921D61502800D90E83 /* README.md */; };
+		F9368BA11D61502800D90E83 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F9368B941D61502800D90E83 /* RealReachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F9368B521D614F7C00D90E83 /* RealReachability监听网络状态.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealReachability监听网络状态.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9368B561D614F7C00D90E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9368B5F1D614F7C00D90E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9368B611D614F7C00D90E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9368B641D614F7C00D90E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9368B661D614F7C00D90E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9368B6E1D614FC600D90E83 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F9368B6F1D614FC600D90E83 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9368B721D614FC600D90E83 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9368B731D614FC600D90E83 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9368B791D61502800D90E83 /* LocalConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalConnection.h; sourceTree = "<group>"; };
+		F9368B7A1D61502800D90E83 /* LocalConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalConnection.m; sourceTree = "<group>"; };
+		F9368B7C1D61502800D90E83 /* FSMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMDefines.h; sourceTree = "<group>"; };
+		F9368B7D1D61502800D90E83 /* FSMEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMEngine.h; sourceTree = "<group>"; };
+		F9368B7E1D61502800D90E83 /* FSMEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMEngine.m; sourceTree = "<group>"; };
+		F9368B7F1D61502800D90E83 /* FSMStateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMStateUtil.h; sourceTree = "<group>"; };
+		F9368B801D61502800D90E83 /* FSMStateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSMStateUtil.m; sourceTree = "<group>"; };
+		F9368B811D61502800D90E83 /* ReachState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachState.h; sourceTree = "<group>"; };
+		F9368B821D61502800D90E83 /* ReachState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachState.m; sourceTree = "<group>"; };
+		F9368B831D61502800D90E83 /* ReachStateLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateLoading.h; sourceTree = "<group>"; };
+		F9368B841D61502800D90E83 /* ReachStateLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateLoading.m; sourceTree = "<group>"; };
+		F9368B851D61502800D90E83 /* ReachStateUnloaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateUnloaded.h; sourceTree = "<group>"; };
+		F9368B861D61502800D90E83 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnloaded.m; sourceTree = "<group>"; };
+		F9368B871D61502800D90E83 /* ReachStateUnReachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateUnReachable.h; sourceTree = "<group>"; };
+		F9368B881D61502800D90E83 /* ReachStateUnReachable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateUnReachable.m; sourceTree = "<group>"; };
+		F9368B891D61502800D90E83 /* ReachStateWIFI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateWIFI.h; sourceTree = "<group>"; };
+		F9368B8A1D61502800D90E83 /* ReachStateWIFI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateWIFI.m; sourceTree = "<group>"; };
+		F9368B8B1D61502800D90E83 /* ReachStateWWAN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachStateWWAN.h; sourceTree = "<group>"; };
+		F9368B8C1D61502800D90E83 /* ReachStateWWAN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachStateWWAN.m; sourceTree = "<group>"; };
+		F9368B8E1D61502800D90E83 /* PingFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingFoundation.h; sourceTree = "<group>"; };
+		F9368B8F1D61502800D90E83 /* PingFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingFoundation.m; sourceTree = "<group>"; };
+		F9368B901D61502800D90E83 /* PingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingHelper.h; sourceTree = "<group>"; };
+		F9368B911D61502800D90E83 /* PingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingHelper.m; sourceTree = "<group>"; };
+		F9368B921D61502800D90E83 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F9368B931D61502800D90E83 /* RealReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealReachability.h; sourceTree = "<group>"; };
+		F9368B941D61502800D90E83 /* RealReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealReachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9368B4F1D614F7C00D90E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9368B491D614F7C00D90E83 = {
+			isa = PBXGroup;
+			children = (
+				F9368B541D614F7C00D90E83 /* RealReachability监听网络状态 */,
+				F9368B531D614F7C00D90E83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9368B531D614F7C00D90E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B521D614F7C00D90E83 /* RealReachability监听网络状态.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9368B541D614F7C00D90E83 /* RealReachability监听网络状态 */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B6C1D614FC600D90E83 /* Class */,
+				F9368B551D614F7C00D90E83 /* Supporting Files */,
+			);
+			path = "RealReachability监听网络状态";
+			sourceTree = "<group>";
+		};
+		F9368B551D614F7C00D90E83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B5E1D614F7C00D90E83 /* Main.storyboard */,
+				F9368B611D614F7C00D90E83 /* Assets.xcassets */,
+				F9368B631D614F7C00D90E83 /* LaunchScreen.storyboard */,
+				F9368B661D614F7C00D90E83 /* Info.plist */,
+				F9368B561D614F7C00D90E83 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9368B6C1D614FC600D90E83 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B6D1D614FC600D90E83 /* Controller */,
+				F9368B701D614FC600D90E83 /* Model */,
+				F9368B711D614FC600D90E83 /* Other */,
+				F9368B741D614FC600D90E83 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F9368B6D1D614FC600D90E83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B6E1D614FC600D90E83 /* ViewController.h */,
+				F9368B6F1D614FC600D90E83 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9368B701D614FC600D90E83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9368B711D614FC600D90E83 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B771D61502800D90E83 /* RealReachability */,
+				F9368B721D614FC600D90E83 /* AppDelegate.h */,
+				F9368B731D614FC600D90E83 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F9368B741D614FC600D90E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9368B771D61502800D90E83 /* RealReachability */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B781D61502800D90E83 /* Connection */,
+				F9368B7B1D61502800D90E83 /* FSM */,
+				F9368B8D1D61502800D90E83 /* Ping */,
+				F9368B931D61502800D90E83 /* RealReachability.h */,
+				F9368B941D61502800D90E83 /* RealReachability.m */,
+			);
+			path = RealReachability;
+			sourceTree = "<group>";
+		};
+		F9368B781D61502800D90E83 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B791D61502800D90E83 /* LocalConnection.h */,
+				F9368B7A1D61502800D90E83 /* LocalConnection.m */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		F9368B7B1D61502800D90E83 /* FSM */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B7C1D61502800D90E83 /* FSMDefines.h */,
+				F9368B7D1D61502800D90E83 /* FSMEngine.h */,
+				F9368B7E1D61502800D90E83 /* FSMEngine.m */,
+				F9368B7F1D61502800D90E83 /* FSMStateUtil.h */,
+				F9368B801D61502800D90E83 /* FSMStateUtil.m */,
+				F9368B811D61502800D90E83 /* ReachState.h */,
+				F9368B821D61502800D90E83 /* ReachState.m */,
+				F9368B831D61502800D90E83 /* ReachStateLoading.h */,
+				F9368B841D61502800D90E83 /* ReachStateLoading.m */,
+				F9368B851D61502800D90E83 /* ReachStateUnloaded.h */,
+				F9368B861D61502800D90E83 /* ReachStateUnloaded.m */,
+				F9368B871D61502800D90E83 /* ReachStateUnReachable.h */,
+				F9368B881D61502800D90E83 /* ReachStateUnReachable.m */,
+				F9368B891D61502800D90E83 /* ReachStateWIFI.h */,
+				F9368B8A1D61502800D90E83 /* ReachStateWIFI.m */,
+				F9368B8B1D61502800D90E83 /* ReachStateWWAN.h */,
+				F9368B8C1D61502800D90E83 /* ReachStateWWAN.m */,
+			);
+			path = FSM;
+			sourceTree = "<group>";
+		};
+		F9368B8D1D61502800D90E83 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				F9368B8E1D61502800D90E83 /* PingFoundation.h */,
+				F9368B8F1D61502800D90E83 /* PingFoundation.m */,
+				F9368B901D61502800D90E83 /* PingHelper.h */,
+				F9368B911D61502800D90E83 /* PingHelper.m */,
+				F9368B921D61502800D90E83 /* README.md */,
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9368B511D614F7C00D90E83 /* RealReachability监听网络状态 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9368B691D614F7C00D90E83 /* Build configuration list for PBXNativeTarget "RealReachability监听网络状态" */;
+			buildPhases = (
+				F9368B4E1D614F7C00D90E83 /* Sources */,
+				F9368B4F1D614F7C00D90E83 /* Frameworks */,
+				F9368B501D614F7C00D90E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RealReachability监听网络状态";
+			productName = "RealReachability监听网络状态";
+			productReference = F9368B521D614F7C00D90E83 /* RealReachability监听网络状态.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9368B4A1D614F7C00D90E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cuit;
+				TargetAttributes = {
+					F9368B511D614F7C00D90E83 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F9368B4D1D614F7C00D90E83 /* Build configuration list for PBXProject "RealReachability监听网络状态" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9368B491D614F7C00D90E83;
+			productRefGroup = F9368B531D614F7C00D90E83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9368B511D614F7C00D90E83 /* RealReachability监听网络状态 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9368B501D614F7C00D90E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9368B651D614F7C00D90E83 /* LaunchScreen.storyboard in Resources */,
+				F9368B621D614F7C00D90E83 /* Assets.xcassets in Resources */,
+				F9368B601D614F7C00D90E83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9368B4E1D614F7C00D90E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9368B9E1D61502800D90E83 /* PingFoundation.m in Sources */,
+				F9368B991D61502800D90E83 /* ReachStateLoading.m in Sources */,
+				F9368BA11D61502800D90E83 /* RealReachability.m in Sources */,
+				F9368B981D61502800D90E83 /* ReachState.m in Sources */,
+				F9368B9F1D61502800D90E83 /* PingHelper.m in Sources */,
+				F9368B751D614FC600D90E83 /* ViewController.m in Sources */,
+				F9368B571D614F7C00D90E83 /* main.m in Sources */,
+				F9368B761D614FC600D90E83 /* AppDelegate.m in Sources */,
+				F9368B951D61502800D90E83 /* LocalConnection.m in Sources */,
+				F9368B971D61502800D90E83 /* FSMStateUtil.m in Sources */,
+				F9368B961D61502800D90E83 /* FSMEngine.m in Sources */,
+				F9368B9D1D61502800D90E83 /* ReachStateWWAN.m in Sources */,
+				F9368B9B1D61502800D90E83 /* ReachStateUnReachable.m in Sources */,
+				F9368BA01D61502800D90E83 /* README.md in Sources */,
+				F9368B9C1D61502800D90E83 /* ReachStateWIFI.m in Sources */,
+				F9368B9A1D61502800D90E83 /* ReachStateUnloaded.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F9368B5E1D614F7C00D90E83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9368B5F1D614F7C00D90E83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9368B631D614F7C00D90E83 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9368B641D614F7C00D90E83 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9368B671D614F7C00D90E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9368B681D614F7C00D90E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9368B6A1D614F7C00D90E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RealReachability监听网络状态/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.cuit.www.RealReachability------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9368B6B1D614F7C00D90E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RealReachability监听网络状态/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.edu.cuit.www.RealReachability------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9368B4D1D614F7C00D90E83 /* Build configuration list for PBXProject "RealReachability监听网络状态" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9368B671D614F7C00D90E83 /* Debug */,
+				F9368B681D614F7C00D90E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9368B691D614F7C00D90E83 /* Build configuration list for PBXNativeTarget "RealReachability监听网络状态" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9368B6A1D614F7C00D90E83 /* Debug */,
+				F9368B6B1D614F7C00D90E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9368B4A1D614F7C00D90E83 /* Project object */;
+}
